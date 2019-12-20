@@ -1,0 +1,51 @@
+{
+    "name": "wp-media/event-manager",
+    "description": "Event Management System for WordPress",
+    "version": "1.0",
+    "keywords": ["wordpress", "pluginsAPI"],
+    "homepage": "https://github.com/wp-media/event-manager",
+    "license": "GPL-3.0-or-later",
+    "support": {
+        "issues": "https://github.com/wp-media/event-manager/issues"
+    },
+    "authors": [
+        {
+            "name": "WP Media",
+            "email": "contact@wp-media.me"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+		"sort-packages": true
+	},
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "php": "^5.6 || ^7",
+        "brain/monkey": "^2.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "phpcompatibility/phpcompatibility-wp": "*",
+        "phpunit/phpunit": "^5.7 || ^7",
+        "wp-coding-standards/wpcs": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WP_Media\\EventManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WP_Media\\EventManager\\Tests\\Unit\\": "test/Unit",
+            "WP_Media\\EventManager\\Tests\\Integration\\": "test/Integration"
+        }
+    },
+    "scripts": {
+        "test-unit":"\"vendor/bin/phpunit\" --testsuite unit --colors=always --configuration tests/Unit/phpunit.xml.dist",
+        "test-integration": "\"vendor/bin/phpunit\" --testsuite integration --colors=always --configuration tests/Integration/phpunit.xml.dist",
+        "run-tests": [
+            "@test-unit",
+            "@test-integration"
+        ]
+    }
+}
