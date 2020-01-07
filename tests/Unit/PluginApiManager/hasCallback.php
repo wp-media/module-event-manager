@@ -11,7 +11,7 @@ use WP_Media\EventManager\PluginApiManager;
  * @covers WP_Media\EventManager\PluginApiManager::hasCallback
  * @group PluginApiManager
  */
-class TestHasCallback extends TestCase {
+class Test_HasCallback extends TestCase {
     /**
      * Test should return false when no callback is attached to the given hook.
      */

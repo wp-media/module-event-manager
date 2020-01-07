@@ -12,7 +12,7 @@ use WP_Media\EventManager\PluginApiManager;
  * @covers WP_Media\EventManager\PluginApiManager::addCallback
  * @group PluginApiManager
  */
-class TestAddCallback extends TestCase {
+class Test_AddCallback extends TestCase {
     /**
      * Test should add a new filter with default priority and arguments
      */

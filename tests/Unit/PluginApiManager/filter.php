@@ -12,7 +12,7 @@ use WP_Media\EventManager\PluginApiManager;
  * @covers WP_Media\EventManager\PluginApiManager::filter
  * @group PluginApiManager
  */
-class TestFilter extends TestCase {
+class Test_Filter extends TestCase {
     /**
      * Test should assert the given filter was fired at least once
      */

@@ -12,7 +12,7 @@ use WP_Media\EventManager\PluginApiManager;
  * @covers WP_Media\EventManager\PluginApiManager::execute
  * @group PluginApiManager
  */
-class TestExecute extends TestCase {
+class Test_Execute extends TestCase {
     /**
      * Test should assert the given action was fired once
      */

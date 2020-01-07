@@ -11,7 +11,7 @@ use WP_Media\EventManager\PluginApiManager;
  * @covers WP_Media\EventManager\PluginApiManager::removeCallback
  * @group PluginApiManager
  */
-class TestRemoveCallback extends TestCase {
+class Test_RemoveCallback extends TestCase {
     /**
      * Test should return true when the given callback is removed from the given hook
      */
