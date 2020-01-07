@@ -56,6 +56,7 @@ class EventManager
         if ($subscriber instanceof EventManagerAwareSubscriberInterface) {
             $subscriber->setEventManager($this);
         }
+
         foreach ($subscriber->getSubscribedEvents() as $event_name => $parameters) {
             $this->addSubscriberListener($subscriber, $event_name, $parameters);
         }
@@ -123,13 +124,13 @@ class EventManager
     private function removeSubscriberListener(SubscriberInterface $subscriber, $event_name, $parameters)
     {
         if (is_string($parameters)) {
-            $this->removeCallback($event_name, [ $subscriber, $parameters ]);
+            $this->removeListener($event_name, [ $subscriber, $parameters ]);
         } elseif (is_array($parameters) && count($parameters) !== count($parameters, COUNT_RECURSIVE)) {
             foreach ($parameters as $parameter) {
-                $this->removeSubscriberCallback($subscriber, $event_name, $parameter);
+                $this->removeSubscriberListener($subscriber, $event_name, $parameter);
             }
         } elseif (is_array($parameters) && isset($parameters[0])) {
-            $this->removeCallback($event_name, [ $subscriber, $parameters[0] ], isset($parameters[1]) ? $parameters[1] : 10);
+            $this->removeListener($event_name, [ $subscriber, $parameters[0] ], isset($parameters[1]) ? $parameters[1] : 10);
         }
     }
 }
