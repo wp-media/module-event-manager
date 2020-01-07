@@ -45,16 +45,7 @@ function get_wp_tests_dir() {
 function bootstrap_integration_suite( $wp_tests_dir ) {
     // Give access to tests_add_filter() function.
     require_once $wp_tests_dir . '/includes/functions.php';
-    // Manually load the plugin being tested.
-    tests_add_filter(
-        'muplugins_loaded',
-        function() {
-            // Load fixture for WC_Rocket() function.
-            require ROCKETVERSIONUPDATE_PLUGIN_ROOT . '/tests/Fixtures/WC_Rocket/functions.php';
-            // Load the plugin.
-            require ROCKETVERSIONUPDATE_PLUGIN_ROOT . '/rocket-version-updater.php';
-        }
-    );
+
     // Start up the WP testing environment.
     require_once $wp_tests_dir . '/includes/bootstrap.php';
 }
