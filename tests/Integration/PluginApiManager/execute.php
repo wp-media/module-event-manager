@@ -1,15 +1,15 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Integration\PluginApiManager;
+namespace WPMedia\EventManager\Tests\Integration\PluginApiManager;
 
-use WP_Media\EventManager\Tests\Integration\TestCase;
+use WPMedia\EventManager\Tests\Integration\TestCase;
 use Brain\Monkey\Actions;
-use WP_Media\EventManager\PluginApiManager;
+use WPMedia\EventManager\PluginApiManager;
 
 /**
  * Tests for the execute method
  *
- * @covers WP_Media\EventManager\PluginApiManager::execute
+ * @covers WPMedia\EventManager\PluginApiManager::execute
  * @group PluginApiManager
  */
 class Test_Execute extends TestCase {

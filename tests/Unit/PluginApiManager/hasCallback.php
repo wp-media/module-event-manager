@@ -1,14 +1,14 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Unit\PluginApiManager;
+namespace WPMedia\EventManager\Tests\Unit\PluginApiManager;
 
-use WP_Media\EventManager\Tests\Unit\TestCase;
-use WP_Media\EventManager\PluginApiManager;
+use WPMedia\EventManager\Tests\Unit\TestCase;
+use WPMedia\EventManager\PluginApiManager;
 
 /**
  * Tests for the hasCallback method
  *
- * @covers WP_Media\EventManager\PluginApiManager::hasCallback
+ * @covers WPMedia\EventManager\PluginApiManager::hasCallback
  * @group PluginApiManager
  */
 class Test_HasCallback extends TestCase {

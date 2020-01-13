@@ -1,16 +1,16 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Unit\EventManager;
+namespace WPMedia\EventManager\Tests\Unit\EventManager;
 
-use WP_Media\EventManager\Tests\Unit\TestCase;
-use WP_Media\EventManager\EventManager;
-use WP_Media\EventManager\PluginApiManager;
-use WP_Media\EventManager\Tests\Fixtures\DummySubscriber;
+use WPMedia\EventManager\Tests\Unit\TestCase;
+use WPMedia\EventManager\EventManager;
+use WPMedia\EventManager\PluginApiManager;
+use WPMedia\EventManager\Tests\Fixtures\DummySubscriber;
 
 /**
  * Tests for the removeSubscriber method
  *
- * @covers WP_Media\EventManager\PluginApiManager::removeSubscriber
+ * @covers WPMedia\EventManager\PluginApiManager::removeSubscriber
  * @group EventManager
  */
 class Test_RemoveSubscriber extends TestCase {

@@ -2,10 +2,10 @@
 /**
  * Common functionality for all PHP test cases.
  *
- * @package WP_Media\EventManager\Tests
+ * @package WPMedia\EventManager\Tests
  */
 
-namespace WP_Media\EventManager\Tests;
+namespace WPMedia\EventManager\Tests;
 
 trait TestCaseTrait {
     /**

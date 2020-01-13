@@ -2,13 +2,13 @@
 /**
  * Test Case for all of the integration tests.
  *
- * @package WP_Media\EventManager\Tests\Integration
+ * @package WPMedia\EventManager\Tests\Integration
  */
 
-namespace WP_Media\EventManager\Tests\Integration;
+namespace WPMedia\EventManager\Tests\Integration;
 
 use Brain\Monkey;
-use WP_Media\EventManager\Tests\TestCaseTrait;
+use WPMedia\EventManager\Tests\TestCaseTrait;
 use WP_UnitTestCase;
 
 abstract class TestCase extends WP_UnitTestCase {

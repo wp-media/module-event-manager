@@ -2,10 +2,10 @@
 /**
  * Interface for subscribers who need access to the event manager object
  *
- * @package WP_Media\EventManager
+ * @package WPMedia\EventManager
  */
 
-namespace WP_Media\EventManager;
+namespace WPMedia\EventManager;
 
 interface EventManagerAwareSubscriberInterface extends SubscriberInterface
 {

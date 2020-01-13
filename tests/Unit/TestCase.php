@@ -2,14 +2,14 @@
 /**
  * Test Case for all of the unit tests.
  *
- * @package WP_Media\EventManager\Tests\Unit
+ * @package WPMedia\EventManager\Tests\Unit
  */
 
-namespace WP_Media\EventManager\Tests\Unit;
+namespace WPMedia\EventManager\Tests\Unit;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 use Brain\Monkey;
-use WP_Media\EventManager\Tests\TestCaseTrait;
+use WPMedia\EventManager\Tests\TestCaseTrait;
 
 abstract class TestCase extends PHPUnitTestCase {
     use \Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;

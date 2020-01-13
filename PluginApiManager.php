@@ -2,10 +2,10 @@
 /**
  * Based on https://carlalexander.ca/designing-system-wordpress-event-management/
  *
- * @package WP_Media\EventManager
+ * @package WPMedia\EventManager
  */
 
-namespace WP_Media\EventManager;
+namespace WPMedia\EventManager;
 
 /**
  * Wrapper class around the WordPress plugin API

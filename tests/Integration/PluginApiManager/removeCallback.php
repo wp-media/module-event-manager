@@ -1,14 +1,14 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Integration\PluginApiManager;
+namespace WPMedia\EventManager\Tests\Integration\PluginApiManager;
 
-use WP_Media\EventManager\Tests\Integration\TestCase;
-use WP_Media\EventManager\PluginApiManager;
+use WPMedia\EventManager\Tests\Integration\TestCase;
+use WPMedia\EventManager\PluginApiManager;
 
 /**
  * Tests for the removeCallback method
  *
- * @covers WP_Media\EventManager\PluginApiManager::removeCallback
+ * @covers WPMedia\EventManager\PluginApiManager::removeCallback
  * @group PluginApiManager
  */
 class Test_RemoveCallback extends TestCase {

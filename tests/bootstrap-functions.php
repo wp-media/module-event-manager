@@ -2,10 +2,10 @@
 /**
  * Common bootstrap functionality.
  *
- * @package WP_Media\EventManager\Tests
+ * @package WPMedia\EventManager\Tests
  */
 
-namespace WP_Media\EventManager\Tests;
+namespace WPMedia\EventManager\Tests;
 
 /**
  * Initialize the test suite.

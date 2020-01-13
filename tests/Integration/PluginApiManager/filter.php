@@ -1,15 +1,15 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Integration\PluginApiManager;
+namespace WPMedia\EventManager\Tests\Integration\PluginApiManager;
 
-use WP_Media\EventManager\Tests\Integration\TestCase;
+use WPMedia\EventManager\Tests\Integration\TestCase;
 use Brain\Monkey\Filters;
-use WP_Media\EventManager\PluginApiManager;
+use WPMedia\EventManager\PluginApiManager;
 
 /**
  * Tests for the filter method
  *
- * @covers WP_Media\EventManager\PluginApiManager::filter
+ * @covers WPMedia\EventManager\PluginApiManager::filter
  * @group PluginApiManager
  */
 class Test_Filter extends TestCase {

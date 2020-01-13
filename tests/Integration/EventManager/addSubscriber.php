@@ -1,16 +1,16 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Integration\EventManager;
+namespace WPMedia\EventManager\Tests\Integration\EventManager;
 
-use WP_Media\EventManager\Tests\Integration\TestCase;
-use WP_Media\EventManager\EventManager;
-use WP_Media\EventManager\PluginApiManager;
-use WP_Media\EventManager\Tests\Fixtures\DummySubscriber;
+use WPMedia\EventManager\Tests\Integration\TestCase;
+use WPMedia\EventManager\EventManager;
+use WPMedia\EventManager\PluginApiManager;
+use WPMedia\EventManager\Tests\Fixtures\DummySubscriber;
 
 /**
  * Tests for the addSubscriber method
  *
- * @covers WP_Media\EventManager\PluginApiManager::addSubscriber
+ * @covers WPMedia\EventManager\PluginApiManager::addSubscriber
  * @group EventManager
  */
 class Test_AddSubscriber extends TestCase {

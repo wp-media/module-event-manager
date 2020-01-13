@@ -1,13 +1,13 @@
 <?php
-namespace WP_Media\EventManager\Tests\Integration\PluginApiManager;
+namespace WPMedia\EventManager\Tests\Integration\PluginApiManager;
 
-use WP_Media\EventManager\Tests\Integration\TestCase;
-use WP_Media\EventManager\PluginApiManager;
+use WPMedia\EventManager\Tests\Integration\TestCase;
+use WPMedia\EventManager\PluginApiManager;
 
 /**
  * Tests for the addCallback method
  *
- * @covers WP_Media\EventManager\PluginApiManager::addCallback
+ * @covers WPMedia\EventManager\PluginApiManager::addCallback
  * @group PluginApiManager
  */
 class Test_AddCallback extends TestCase {

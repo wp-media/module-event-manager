@@ -1,8 +1,8 @@
 <?php
 
-namespace WP_Media\EventManager\Tests\Fixtures;
+namespace WPMedia\EventManager\Tests\Fixtures;
 
-use WP_Media\EventManager\SubscriberInterface;
+use WPMedia\EventManager\SubscriberInterface;
 
 /**
  * Dummy subscriber for tests

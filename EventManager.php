@@ -3,10 +3,10 @@
  * Event Manager for events and listeners.
  * Based on https://carlalexander.ca/designing-system-wordpress-event-management/
  *
- * @package WP_Media\EventManager
+ * @package WPMedia\EventManager
  */
 
-namespace WP_Media\EventManager;
+namespace WPMedia\EventManager;
 
 /**
  * The event manager manages events using the WordPress plugin API.

@@ -2,10 +2,10 @@
 /**
  * Interface for subscribers
  *
- * @package WP_Media\EventManager
+ * @package WPMedia\EventManager
  */
 
-namespace WP_Media\EventManager;
+namespace WPMedia\EventManager;
 
 /**
  * A Subscriber knows what specific WordPress events it wants to listen to.

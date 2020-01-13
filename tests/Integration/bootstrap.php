@@ -2,14 +2,14 @@
 /**
  * Bootstraps the plugin's integration tests
  *
- * @package WP_Media\EventManager\Tests\Integration
+ * @package WPMedia\EventManager\Tests\Integration
  */
 
-namespace WP_Media\EventManager\Tests\Integration;
+namespace WPMedia\EventManager\Tests\Integration;
 
 use Brain\Monkey;
-use WP_Media\EventManager\Tests\Fixtures\Redis;
-use function WP_Media\EventManager\Tests\init_test_suite;
+use WPMedia\EventManager\Tests\Fixtures\Redis;
+use function WPMedia\EventManager\Tests\init_test_suite;
 
 require_once dirname( dirname( __FILE__ ) ) . '/bootstrap-functions.php';
 init_test_suite( 'Integration' );
