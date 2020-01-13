@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "WP_Media\\EventManager\\": "/"
+            "WP_Media\\EventManager\\": ""
         }
     },
     "autoload-dev": {
