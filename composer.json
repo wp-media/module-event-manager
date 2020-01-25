@@ -30,24 +30,15 @@
 		"wp-coding-standards/wpcs": "^2"
 	},
 	"autoload": {
-		"classmap": [
-			"class-event-manager.php",
-			"event-manager-aware-subscriber-interface.php",
-			"subscriber-interface.php"
-		],
-		"psr4": {
-			"WP_Rocket\\Event_Management\\": "."
-		}
+		"psr-4": { "WP_Rocket\\Event_Management\\": "." },
+		"exclude-from-classmap": [ "/Tests/" ]
 	},
 	"autoload-dev": {
-		"psr-4": {
-			"WPMedia\\EventManager\\Tests\\Unit\\": "tests/Unit",
-			"WPMedia\\EventManager\\Tests\\Integration\\": "tests/Integration"
-		}
+		"psr-4": { "WPMedia\\EventManager\\Tests\\": "Tests/" }
 	},
 	"scripts": {
-		"test-unit":"\"vendor/bin/phpunit\" --testsuite unit --colors=always --configuration tests/Unit/phpunit.xml.dist",
-		"test-integration": "\"vendor/bin/phpunit\" --testsuite integration --colors=always --configuration tests/Integration/phpunit.xml.dist",
+		"test-unit":"\"vendor/bin/phpunit\" --testsuite unit --colors=always --configuration Tests/Unit/phpunit.xml.dist",
+		"test-integration": "\"vendor/bin/phpunit\" --testsuite integration --colors=always --configuration Tests/Integration/phpunit.xml.dist",
 		"run-tests": [
 			"@test-unit",
 			"@test-integration"
