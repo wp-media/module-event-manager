@@ -1,31 +1,60 @@
 <?php
-/**
- * Test Case for all of the integration tests.
- *
- * @package WPMedia\EventManager\Tests\Integration
- */
+declare(strict_types=1);
 
 namespace WPMedia\EventManager\Tests\Integration;
 
-use Brain\Monkey;
-use WPMedia\EventManager\Tests\TestCaseTrait;
-use WP_UnitTestCase;
+use ReflectionObject;
+use WPMedia\PHPUnit\Integration\TestCase as BaseTestCase;
 
-abstract class TestCase extends WP_UnitTestCase {
-    use TestCaseTrait;
-    /**
-     * Prepares the test environment before each test.
-     */
-    public function setUp() {
-        parent::setUp();
-        Monkey\setUp();
-    }
+abstract class TestCase extends BaseTestCase {
+	/**
+	 * Configuration for the test data.
+	 *
+	 * @var array{'test_data'?: array<string, mixed>}
+	 */
+	protected $config;
 
-    /**
-     * Cleans up the test environment after each test.
-     */
-    public function tearDown() {
-        Monkey\tearDown();
-        parent::tearDown();
-    }
+	/**
+	 * Setup method for the test case.
+	 *
+	 * @return void
+	 */
+	public function set_up() {
+		parent::set_up();
+
+		if ( empty( $this->config ) ) {
+			$this->loadTestDataConfig();
+		}
+	}
+
+	/**
+	 * Get the test data configuration.
+	 *
+	 * @return array<string, mixed>
+	 */
+	public function configTestData(): array {
+		if ( empty( $this->config ) ) {
+			$this->loadTestDataConfig();
+		}
+
+		return isset( $this->config['test_data'] )
+			? $this->config['test_data']
+			: $this->config;
+	}
+
+	/**
+	 * Load test data configuration.
+	 *
+	 * @return void
+	 */
+	protected function loadTestDataConfig(): void {
+		$obj      = new ReflectionObject( $this );
+		$filename = $obj->getFileName();
+
+		if ( false === $filename ) {
+			return;
+		}
+
+		$this->config = $this->getTestData( dirname( $filename ), basename( $filename, '.php' ) );
+	}
 }
