@@ -1,2 +1,3 @@
 # Exclude everything in the vendor directory.
 /vendor/*
+composer.lock
