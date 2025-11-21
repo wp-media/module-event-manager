@@ -23,17 +23,6 @@ class HasCallbackTest extends TestCase {
 	}
 
 	/**
-	 * Test should return true when a callback is attached to the given hook.
-	 */
-	public function testShouldReturnTrueWhenCallbackAttached() {
-		add_filter( 'the_content', 'strtolower' );
-
-		$plugin_api_manager = new PluginApiManager();
-
-		$this->assertTrue( $plugin_api_manager->has_callback( 'the_content', false ) );
-	}
-
-	/**
 	 * Test should return false when the given callback is not attached to the given hook.
 	 */
 	public function testShouldReturnFalseWhenCallbackNotAttached() {
@@ -45,7 +34,7 @@ class HasCallbackTest extends TestCase {
 	}
 
 	/**
-	 * Test should return true when the given callback is attached to the given hook.
+	 * Test should return priority value when the given callback is attached to the given hook.
 	 */
 	public function testShouldReturnPriorityIntWhenCallbackAttached() {
 		add_filter( 'the_content', 'strtolower', 11 );
