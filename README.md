@@ -21,8 +21,9 @@ Initialize the Event Manager in your WordPress plugin or theme:
 
 ```php
 use WPMedia\EventManager\EventManager;
+use WPMedia\EventManager\PluginApiManager;
 
-$event_manager = new EventManager();
+$event_manager = new EventManager(new PluginApiManager());
 $event_manager->add_subscriber(new YourEventSubscriber());
 ```
 

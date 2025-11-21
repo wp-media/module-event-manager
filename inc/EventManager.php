@@ -104,7 +104,7 @@ class EventManager {
 	}
 
 	/**
-	 * Removes the given subscriber listener to the list of event listeners
+	 * Removes the given subscriber listener from the list of event listeners
 	 * that listen to the given event.
 	 *
 	 * @param SubscriberInterface $subscriber SubscriberInterface implementation.

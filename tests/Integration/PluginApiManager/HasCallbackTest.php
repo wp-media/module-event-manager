@@ -45,7 +45,7 @@ class HasCallbackTest extends TestCase {
 	}
 
 	/**
-	 * Test should return true when the given callback is attached to the given hook.
+	 * Test should return priority int when the given callback is attached to the given hook.
 	 */
 	public function testShouldReturnPriorityIntWhenCallbackAttached() {
 		add_filter( 'the_content', 'strtolower', 11 );
