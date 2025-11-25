@@ -1,0 +1,13 @@
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+parameters:
+    level: 5
+    inferPrivatePropertyTypeFromConstructor: true
+    paths:
+        - inc/
+        - tests/Fixtures
+        - tests/Integration
+        - tests/Unit
+    scanFiles:
+        - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
+        - vendor/php-stubs/wordpress-tests-stubs/wordpress-tests-stubs.php
