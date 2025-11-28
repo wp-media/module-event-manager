@@ -1,7 +1,6 @@
 {
     "name": "wp-media/event-manager",
     "description": "Event Management System for WordPress",
-    "version": "1.0",
     "keywords": ["wordpress", "pluginsAPI"],
     "homepage": "https://github.com/wp-media/event-manager",
     "license": "GPL-3.0-or-later",
@@ -15,7 +14,6 @@
             "email": "contact@wp-media.me"
         }
     ],
-    "minimum-stability": "stable",
     "config": {
 		"sort-packages": true,
 		"allow-plugins": {
